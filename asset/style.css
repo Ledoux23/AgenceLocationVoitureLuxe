@@ -307,7 +307,7 @@ section {
     text-align: right;
 }
 
-.btn-c2{
+.btn-c2, button{
     background-color: rgb(222, 80, 80);
 }
 
@@ -500,7 +500,6 @@ footer{
     justify-content: space-between;
     height: 80%;
     color: #484848;
-    border: 2px solid blue;
     padding: 30px;
 }
 
@@ -518,7 +517,11 @@ footer{
 
 .f-a-left-bottom ul li{
     width: 15%;
-    padding-right: 10px;
+    padding-right: 5px;
+}
+
+.f-a-left-bottom ul li img{
+    height: 30px;
 }
 
 .f-a form{
@@ -526,19 +529,20 @@ footer{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    border: 2px solid green;
 }
 
-.f-a form input{
-    background-color: #eae5e5;
-    height: 20%;
-    padding-bottom: 30px;
+input, textarea {  
+    border  : none;
+    min-height: 30px;
+    margin  : 0;
+    width   : 100%;
+    background: #eae7e7;;
 }
 
-/* .btn-f{
-    background-color: rgb(222, 80, 80);
-} */
-
+textarea{
+    min-height: 60px;
+}
+  
 .f-b{
     background-color: black;
     text-align: center;

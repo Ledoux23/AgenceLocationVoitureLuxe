@@ -197,12 +197,20 @@
                 </div>     
             </div>
             <form>
-                <h2>CONTACT FORM</h2>
-                <input type="text" name="name">
-                <input type="text" name="email">
-                <input type="text" name="message"> <!-- option de resize -->
-                <a class="btn btn-c2">SUBMIT</a>
-            </form>
+                <h2>CONTACT FORM</h2>              
+                <!-- <div id="form-name"> -->
+                    <input type="text" id="name" name="user_name" placeholder="Enter your Name">
+                <!-- </div>               -->
+                <!-- <div id="email"> -->
+                    <input type="email" id="mail" name="user_email" placeholder="Enter a valid email address">
+                <!-- </div>              -->
+                <!-- <div id="message"> -->
+                    <textarea id="msg" name="user_message" placeholder="Enter your message"></textarea>
+                <!-- </div>           -->
+                <div class="button">
+                    <a class="btn btn-c2">SUBMIT</a>
+                </div>
+            </form>     
         </div>
         <div class="f-b">
             <p class="bg-black"><a>Sample text. Click to select the text box. Click or double <br/> click to start editing the text.</a></p>
