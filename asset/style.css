@@ -3,8 +3,8 @@
 }
 
 body {
-    max-width: 1200px;
-    margin: auto;
+    /* max-width: 1200px; */
+    margin: 0;
     font-family: 'Maven Pro', sans-serif;
     font-size: 16px;
     color: white;

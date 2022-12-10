@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>C&B</title>
+  <link rel="stylesheet" href="./asset/c&b.css">
+  <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700&display=swap&family=Mountains+of+Christmas:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div id="menuContainer">
+  <h1>COWS & BULLS</h1>
+  <menu>
+    <a href="#" class="button" onclick="transitionEnJeu()">Jouer</a>
+    <a href="#" class="button" onclick="regleAlerte('Règle:')">Règles</a>
+    <a href="./index.html" class="button">Acceuil</a>
+  </menu>
+</div>
+
+<menu id="poPupAbondon">
+  <h2 style="font-size: 3rem;">Game Over !</h2>
+  <p id="numGen" style="font-size: 2rem; margin-bottom: 1rem;"></p>
+  <a href="#" class="button" onclick="transitionEnJeu()">Rejouer</a>
+  <a href="#" class="button" onclick="transitionHorsJeu()">Quitté</a>
+</menu>
+<menu id="poPupGagner">
+  <h2 style="font-size: 3rem;">Vous avez Réussi !</h2>
+  <h3>Stat:</h3>
+  <p id="stat" style="font-size: 2rem; margin-bottom: 1rem;"></p>
+  <a href="#" class="button" onclick="transitionEnJeu()">Rejouer</a>
+  <a href="#" class="button" onclick="transitionHorsJeu()">Quitté</a>
+</menu>
+
+<div id="upper">
+  <img class = "img-left" src="./asset/images/sapin1.png">
+  <img class = "img-right" src="./asset/images/joyeux_noel.png">
+  <div class="pwindow">
+    <img class="pwin-img" src="./asset/images/sapin.png">
+    <h2 >DEVINEZ LE NOMBRE EXACT</h2>
+    <input id="bField" maxlength='4' onfocus="this.value=''" value='????' onkeyup="this.value=this.value.replace(/[^\d]/,'')"/>
+    <div id="histContainer">
+      <ul id="historique">
+        <li id="header">
+          <span>Entré</span>
+          <span>Essai</span>
+          <span>Cows</span>
+          <span>Bulls</span>
+        </li>
+      </ul>
+
+    </div>
+    <a id ="valider" href="#" class="button" onclick="jouer()">Valider!</a>
+  </div>
+</div>
+<div id="lower">
+  <a id ="rejouer" href="#" class="button" onclick="transitionEnJeu()">Rejouer</a>
+  <a id ="abandonner" href="#" class="button" onclick="transitionPopupAbondon()">Abandonner</a>
+</div>
+<div class="snowflakes"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+<script type="text/javascript" src="./asset/c&b.js"></script>
+</body>
+
+</html>
