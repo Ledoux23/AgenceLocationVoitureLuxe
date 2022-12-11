@@ -3,7 +3,6 @@
 }
 
 body {
-    /* max-width: 1200px; */
     margin: 0;
     font-family: 'Maven Pro', sans-serif;
     font-size: 16px;
@@ -13,7 +12,7 @@ body {
 /*===============================Header===============================*/
 
 header {
-    background: url("./images/sujet2_template_image0.jpg") no-repeat ;
+    background: url("/asset/images/sujet2_template_image0.jpg") no-repeat ;
     height: 100vh;
     background-size: 100% 100%;
 }
@@ -26,9 +25,45 @@ header {
 }
 
 #logo {
-    width: 60px;
-    border: 2px double white;
-    border-radius: 30%;
+    width: 100px;
+}
+
+.button {
+    display: inline-block;
+    background-color: rgb(222, 80, 80);
+    border-radius: 10px;
+    color: #eeeeee;
+    text-align: center;
+    font-size: 18px;
+    padding: 10px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+.button span:after {
+    content: "\00bb";
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+.button:hover {
+    background-color: #f7c2f9;
+}
+.button:hover span {
+    padding-right: 25px;
+}
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
 }
 
 #heading  {
@@ -125,6 +160,7 @@ section {
 	background: rgb(14, 14, 14);
 	color: rgb(255, 255, 255);
 	border: 1px solid transparent;
+    border-radius: 10px;
 	padding: 0 22px;
     text-transform: uppercase;
 	font-weight: 500;
@@ -193,7 +229,7 @@ section {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 800px;
+    height: 1000px;
 }
 
 .c2-a-left{
@@ -315,7 +351,7 @@ section {
 
 #container-3{
     width: 100%;
-    height: 600px;
+    height: 800px;
 }
 
 .c3-a{
@@ -487,7 +523,7 @@ section {
 
 footer{
     width: 100%;
-    height: 400px;
+    height: 600px;
     display: flex;
     flex-direction: column;
     justify-content: stretch;
@@ -498,7 +534,7 @@ footer{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 80%;
+    height: 90%;
     color: #484848;
     padding: 30px;
 }
@@ -513,6 +549,10 @@ footer{
     justify-content: flex-start;
     list-style-type: none;
     padding: 0px;
+}
+
+.f-a-left-bottom h3, .f-a-left-bottom ul, .f-a-left-bottom p, .f-a-left-up p{
+    padding-top: 20px;
 }
 
 .f-a-left-bottom ul li{
@@ -533,20 +573,21 @@ footer{
 
 input, textarea {  
     border  : none;
-    min-height: 30px;
+    min-height: 50px;
     margin  : 0;
+    padding-left: 20px;
     width   : 100%;
     background: #eae7e7;;
 }
 
 textarea{
-    min-height: 60px;
+    min-height: 120px;
 }
   
 .f-b{
     background-color: black;
     text-align: center;
     font-size: 12px;
-    height: 20%;
+    height: 10%;
     padding: 10px;
 }
